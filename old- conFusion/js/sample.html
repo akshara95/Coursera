@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script type="text/javascript"  src="sample.js"></script>
+</head>
+<body>
+<div ng-controller="myController">
+  <div>
+    first Name: {{employee.firstName}}
+    last Name: {{employee.lastName}}
+  </div>
+  <div>
+  <ul>
+    <li ng-repeat="country in countries">
+      {{country.name}}
+      <ul>
+        <li ng-repeat="city in country.cities">
+            {{city.name}}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>likes</th>
+      <th>dislikes</th>
+    <tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="technology in technologies">
+      <td>{{technology.name}}</td>
+        <td>{{technology.likes}}</td>
+          <td>{{technology.dislikes}}</td>
+          <td><input type="button" value="likes" ng-click="incrementLikes(technology)"></td>
+          <td><input type="button" value="dislikes" ng-click="incrementDisLikes(technology)"></td>
+
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>

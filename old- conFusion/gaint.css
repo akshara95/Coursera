@@ -1,0 +1,18 @@
+.jumbotron{
+  background-color: #87cefa;
+  text-align: center;
+  color:white;
+}
+.glyphicon{
+  font-size:50px;
+  color:#00BFFF;
+  align-content:center;
+}
+.form
+{
+  text-align:center;
+}
+.navbar-custom{
+  background-color: #1e90ff;
+  text-decoration-color: white;
+}
